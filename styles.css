@@ -421,6 +421,12 @@ animation:words 20s infinite;
   .projects .heading span {
     color: rgb(194, 175, 7);
   }
+  .projects p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
   .projects .box-container {
     display: flex;
     flex-wrap: wrap;
