@@ -1,15 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors')
 const path  = require('path')
 const port = 4000
 
 const app = express();
 app.use(express.static(__dirname));
 app.use(express.urlencoded({extended:true}))
+app.use(cors(
+{
+  origin:["https://my-portfolio-ten-sigma-61.vercel.app"],
+  methods:["POST","GET"],
+  credentials : true
+}
+));
 
-
-mongoose.connect('mongodb+srv://LearnerId:LearnerId@cluster0.p2ojj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://LearnerId:LearnerId@cluster0.p2ojj.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0')
 const db = mongoose.connection
 db.once('open',()=>{
     console.log("mongodb connection success!")
