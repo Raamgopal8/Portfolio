@@ -9,7 +9,7 @@ app.use(express.static(__dirname));
 app.use(express.urlencoded({extended:true}))
 
 
-mongoose.connect('mongodb://localhost:27017/users')
+mongoose.connect('mongodb+srv://LearnerId:LearnerId@cluster0.p2ojj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 const db = mongoose.connection
 db.once('open',()=>{
     console.log("mongodb connection success!")
