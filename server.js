@@ -1,15 +1,15 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const port = process.env.PORT || 4000;
 const path  = require('path')
-const port = 4000
 
 const app = express();
 app.use(express.static(__dirname));
 app.use(express.urlencoded({extended:true}))
 
-
-mongoose.connect('mongodb+srv://LearnerId:LearnerId@cluster0.p2ojj.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection
 db.once('open',()=>{
     console.log("mongodb connection success!")
@@ -41,7 +41,7 @@ app.post('/post',async(req,res)=>{
   })
   await user.save()
   console.log(user)
-  res.send("Form Submitted");
+  res.sendFile(path.join(__dirname,'index.html'))
 })
 
 
