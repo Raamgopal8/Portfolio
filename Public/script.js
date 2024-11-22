@@ -1,11 +1,14 @@
-const { JSDOM } = require('jsdom');
-const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
-const document = dom.window.document;
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelector('header nav a');
+const form = document.getElementById('myForm');
 
+form.onsubmit = async (event) => {
+    event.preventDefault(); // Prevent the default form submission
+    alert('Form submitted successfully!'); // Show alert message
+    // You can add additional logic here to handle the form data if needed
+  };
 
 window.onscroll = () =>{
     selections.forEach(sec =>{

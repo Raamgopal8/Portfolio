@@ -1,12 +1,16 @@
 require('dotenv').config();
+const { JSDOM } = require('jsdom');
+const dom = new JSDOM(`<!DOCTYPE html>`);
+const document = dom.window.document;
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 4000;
 const path  = require('path')
 
+
 const app = express();
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'Public')));
 app.use(express.urlencoded({extended:true}))
 
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -25,7 +29,7 @@ const userSchema = new mongoose.Schema({
 const Users = mongoose.model("data",userSchema)
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'index.html'))
+    res.sendFile(path.join(__dirname,'Public','index.html'))
 })
 
 app.post('/post',async(req,res)=>{
@@ -41,12 +45,12 @@ app.post('/post',async(req,res)=>{
   })
   await user.save()
   console.log(user)
-  res.sendFile(path.join(__dirname,'index.html'))
+  res.sendFile(path.join(__dirname,'Public','index.html'))
 })
 
 
 app.listen(port,()=>{
     console.log("Server is Running")
 })
- 
+
 //end of the code 
