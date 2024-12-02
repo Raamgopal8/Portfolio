@@ -210,7 +210,7 @@ animation:words 20s infinite;
 @keyframes words{
     0%,
     20%{
-        content: "Software Developer";
+        content: "Competitive Programmer";
     }
     21%,
     40%{
