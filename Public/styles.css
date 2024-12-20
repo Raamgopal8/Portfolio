@@ -214,11 +214,11 @@ animation:words 20s infinite;
     }
     21%,
     40%{
-        content: "Java Programmer";
+        content: "Tech Enthusiast";
     }
     41%,
     60%{
-        content: "Web Developer";
+        content: "Junior Mern Stack Developer";
     }
     61%,
     80%{
@@ -226,7 +226,7 @@ animation:words 20s infinite;
     }
     81%,
     100%{
-        content: "Undergraduate Student";
+        content: "CSE Undergraduate Student";
     }
 }
 @keyframes typing{
