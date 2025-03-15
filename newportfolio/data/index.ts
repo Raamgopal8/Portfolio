@@ -75,7 +75,7 @@ export const projects = [
     des: "Online Mock Test is an online platform for students to practice and prepare for their exams. The platform provides a wide range of mock tests, sample papers, and study materials for various competitive exams such as JEE, NEET, UPSC, SSC, and more. The platform also provides a detailed analysis of the student's performance and suggests areas of improvement. The platform is designed to be user-friendly and easy to use, making it accessible to students of all ages and backgrounds.",
     img: "/mocktest.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/https://testingphase.pythonanywhere.com/",
+    link: "/ui.earth.com",
   },
   {
     id: 2,
@@ -83,7 +83,7 @@ export const projects = [
     des: "Explore the wide ranges of coffee from all over the world. Immerse yourself in the flavors and aromas of the world's finest coffees.",
     img: "/coffee.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/https://coffeeshop-4kb5wrdy1-raamgopal8s-projects.vercel.app",
+    link: "/ui.yoom.com",
   },
   {
     id: 3,
@@ -91,7 +91,7 @@ export const projects = [
     des: "My personalized Portfolio",
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/https://portfolio-93oozu3br-raamgopal8s-projects.vercel.app",
+    link: "/ui.aiimg.com",
   },
 ];
 
