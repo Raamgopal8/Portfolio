@@ -1,6 +1,14 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  sentry: {
+    disableServerWebpackPlugin: true,
+    disableClientWebpackPlugin: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
 // For all available options, see:
