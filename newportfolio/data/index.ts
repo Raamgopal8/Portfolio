@@ -74,7 +74,7 @@ export const projects = [
     title: "Online Mock Test",
     des: "Online Mock Test is an online platform for students to practice and prepare for their exams. The platform provides a wide range of mock tests, sample papers, and study materials for various competitive exams such as JEE, NEET, UPSC, SSC, and more. The platform also provides a detailed analysis of the student's performance and suggests areas of improvement. The platform is designed to be user-friendly and easy to use, making it accessible to students of all ages and backgrounds.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: "/ui.earth.com",
   },
   {
@@ -82,7 +82,7 @@ export const projects = [
     title: "Online Coffee Shop",
     des: "Explore the wide ranges of coffee from all over the world. Immerse yourself in the flavors and aromas of the world's finest coffees.",
     img: "/p2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
     link: "/ui.yoom.com",
   },
   {
@@ -90,7 +90,15 @@ export const projects = [
     title: "Portfolio",
     des: "My personalized Portfolio",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/next.svg", "/tail.svg"],
+    link: "/ui.aiimg.com",
+  },
+  {
+    id: 4,
+    title: "Organs donation",
+    des: "Organs donation is a life-saving process that helps save lives and improve the quality of life for those in need.",
+    img: "/p5.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "/ui.aiimg.com",
   },
 ];
@@ -131,8 +139,8 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack Developer",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "CSE Undergraduate Student",
+    desc: "",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
