@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Raam, Budding Mern Stack Developer based in India.
+            Hi! I&apos;m Raam, Crafting tomorrow with code—innovating seamless digital experiences.
           </p>
 
           <a href="#about">
